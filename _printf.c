@@ -13,7 +13,7 @@ int print_format(const char *format, va_list valist)
 
 	for (i = 0; format[i]; i++)
 	{
-		if (format[i] == '%' || format[i] == '%+' || format[i] == '% ' || format[i] == '%#')
+		if (format[i] == '%' || format[i] == "%+" || format[i] == "% " || format[i] == "%#")
 		{
 			result = formatchecker(format, valist, &i);
 			if (result == -1)
