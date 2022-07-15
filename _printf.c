@@ -23,6 +23,7 @@ int print_format(const char *format, va_list valist)
 		count += result;
 		continue;
 		}
+		if (format[i] == '%+')
 		{
 			result = formatchecker(format, valist, &i);
 			if (result == -1)
