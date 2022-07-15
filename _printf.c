@@ -80,7 +80,7 @@ int formatchecker(const char *str, va_list valist, int *j)
 	}
 	if(str[*j+1] == '+')
 	{
-		print_out('+%');
+		print_out('+');
 		return (1);
 	}
 	formats = sizeof(checker) / sizeof(checker[0]);
